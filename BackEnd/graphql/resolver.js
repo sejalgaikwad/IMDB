@@ -8,7 +8,10 @@ var removeProducers=require('./mutation/producersMutation').removeProducers
 var addMovies=require('./mutation/moviesMutation').addMovies
 var editMovies=require('./mutation/moviesMutation').editMovies
 var removeMovies=require('./mutation/moviesMutation').removeMovies
-var addMoviesActors=require('./mutation/moviesMutation').addMoviesActors
+var addMultipleActorsInMovies=require('./mutation/moviesMutation').addMultipleActorsInMovies
+var createMovies=require('./mutation/moviesMutation').createMovies
+var removeActorsInMovies=require('./mutation/moviesMutation').removeActorsInMovies
+var removeProducerInMovies=require('./mutation/moviesMutation').removeProducerInMovies
 
 
 
@@ -43,6 +46,9 @@ exports.resolvers = {
         addMovies,
         editMovies,
         removeMovies,
-        addMoviesActors
+        addMultipleActorsInMovies,
+        createMovies,
+        removeActorsInMovies,
+        removeProducerInMovies
     },
 }

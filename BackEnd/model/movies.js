@@ -17,10 +17,9 @@ var moviesSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'actors'
     }],
-    producers:[{
+    producers:{
         type: Schema.Types.ObjectId,
         ref: 'producers'
-    }]
-
+    },
 })
 module.exports=mongoose.model('movies', moviesSchema)
